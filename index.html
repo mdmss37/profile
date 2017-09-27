@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>DOGE</title>
+	<title>Profile</title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700|Roboto:100,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -13,6 +13,11 @@
       <li>
         <a href="#summary">
           <i class="fa fa-info-circle"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#summary">
+          <i class="fa fa-archive" aria-hidden="true"></i>
         </a>
       </li>
       <li>
@@ -29,6 +34,7 @@
   </div>  
   
   <div id="page-content">
+
     <div id="summary" class="container text-center">
       <div class="card-white card-profile">
         <img id="profile" class="img-circle" src="images/DSC_0245-1.jpg" alt="profile">
@@ -36,7 +42,7 @@
         <h1>Kazuya Nakajima</h1>
         <h2>Lewagon student</h2>
 
-        <p>Learning programming</p>
+        <p>Learning code</p>
 
         <div class="div-btn">
           <a href="#" target="_blank" class="btn-submit">See Yourself</a>   
@@ -44,7 +50,7 @@
         
       </div>
 
-      <div class="card-white">
+      <div id="social" class="card-white">
         <ul class="list-inline">
   <!--         https://stackoverflow.com/questions/27264819/how-do-i-give-a-font-awesome-icon-a-background-color -->
           <li>
@@ -75,32 +81,48 @@
         </ul>      
       </div>
 
-      <div id="favorite-movies" class="card-white">
+      <div id="favorite-movies" class="card-white card-movie">
         <h2>My favorite movies</h2>
         
         <table>
           <tbody>
-            <tr>
-              <td><img class="img-movie" src="images/Back_to_the_Future.jpg" alt="back_to_the_future"></td>
+
+            <tr class="row-movie">
+              <td>
+                <a href="https://en.wikipedia.org/wiki/Back_to_the_Future">
+                  <img class="img-movie" src="images/Back_to_the_Future.jpg" alt="back_to_the_future">
+                </a>
+              </td>
               <td>
                 <h3>Back to the Future</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quidem eos enim molestias nostrum laborum quo ut nulla aliquam blanditiis eius molestiae veritatis eveniet doloremque fuga, ipsum? Labore, vero est!</p>
               </td>
-            </tr>
-            <tr>
-              <td><img class="img-movie" src="images/Back_to_the_Future_Part_II.jpg" alt="back_to_the_future2"></td>
+            </tr>              
+
+            <tr class="row-movie">
+              <td>
+                <a href="https://en.wikipedia.org/wiki/Back_to_the_Future_Part_II">
+                  <img class="img-movie" src="images/Back_to_the_Future_Part_II.jpg" alt="back_to_the_future2">  
+                </a>
+              </td>
               <td>
                 <h3>Back to the Future 2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quidem eos enim molestias nostrum laborum quo ut nulla aliquam blanditiis eius molestiae veritatis eveniet doloremque fuga, ipsum? Labore, vero est!</p>
               </td>
-            </tr>
-            <tr>
-              <td><img class="img-movie" src="images/Back_to_the_Future_Part_III.jpg" alt="back_to_the_future3"></td>
+            </tr>              
+
+            <tr class="row-movie">
+              <td>
+                <a href="https://en.wikipedia.org/wiki/Back_to_the_Future_Part_III">
+                  <img class="img-movie" src="images/Back_to_the_Future_Part_III.jpg" alt="back_to_the_future3">  
+                </a>
+              </td>
               <td>
                 <h3>Back to the Future 3</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quidem eos enim molestias nostrum laborum quo ut nulla aliquam blanditiis eius molestiae veritatis eveniet doloremque fuga, ipsum? Labore, vero est!</p>
               </td>
             </tr>
+
           </tbody>
         </table>      
       </div>

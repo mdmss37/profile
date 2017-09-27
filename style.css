@@ -23,6 +23,10 @@
   height: 200px;
 }
 
+#profile {
+  border: 3px solid lightgrey;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #EEEEEE;
@@ -35,15 +39,17 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 26px; 
+  font-size: 30px; 
+  font-weight: lighter;
 }
 
 h3 {
-  font-size: 20px; 
+  font-size: 20px;
+  font-weight: lighter;
 }
 
 a {
@@ -93,6 +99,14 @@ a.btn-submit:hover {
   line-height: 16px;
 }
 
+.card-movie p {
+  margin: 0 20px;
+}
+
+tr.row-movie > td {
+  padding-bottom: 20px;
+}
+
 .list-inline > li {
   display: inline-block;
   padding: 0px 30px;
@@ -129,6 +143,10 @@ a.btn-submit:hover {
   color: #0077B5;
 }
 
+#footer .fa {
+  color: #788188;
+}
+
 #sidebar {
   background-color: #384047;
   position: fixed;
@@ -150,7 +168,10 @@ a.btn-submit:hover {
   text-decoration: none;
   font-size: 25px;
   color: #788188;
-  transition: all 1s ease-in-out;
+}
+
+#sidebar a i {
+  transition: transform .5s ease-in-out; 
 }
 
 #sidebar a:hover i {
