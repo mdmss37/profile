@@ -49,7 +49,7 @@ const initializeBoard = (fieldLen, mineNum) => {
   document.querySelector("#minesweeper>tbody").innerHTML = ""
   tileRender(fieldLen)
 
-  const tds = document.querySelectorAll("td")
+  const tds = document.querySelectorAll("#minesweeper>tbody>td")
   tds.forEach(td => td.addEventListener("contextmenu", noContext))
   tds.forEach(td => td.addEventListener("contextmenu", rightClickHandler))
   tds.forEach(td => td.addEventListener("click", leftClickHandler))
@@ -60,7 +60,7 @@ const initializeBoard = (fieldLen, mineNum) => {
       const row = `<tr></tr>`
       board.insertAdjacentHTML("beforeend", row)
     }
-    const rows = document.querySelectorAll("tr")
+    const rows = document.querySelectorAll("#minesweeper>tbody>tr")
     rows.forEach((row, i) => {
       for (let j = 1; j <= num; j++) {
         const td = `<td class=${"unopened"} data-row=${i+1} data-col=${j}></td>`
