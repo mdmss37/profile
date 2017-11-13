@@ -1,4 +1,6 @@
 
+// TODO: refactor code to be more maintanable
+
 // global variables you can access from anywhere
 let field, tds, fieldLen, mineNum;
 const board = document.querySelector("#minesweeper>tbody")
@@ -49,7 +51,7 @@ const initializeBoard = (fieldLen, mineNum) => {
   document.querySelector("#minesweeper>tbody").innerHTML = ""
   tileRender(fieldLen)
 
-  const tds = document.querySelectorAll("#minesweeper>tbody>td")
+  const tds = document.querySelectorAll("#minesweeper>tbody>tr>td")
   tds.forEach(td => td.addEventListener("contextmenu", noContext))
   tds.forEach(td => td.addEventListener("contextmenu", rightClickHandler))
   tds.forEach(td => td.addEventListener("click", leftClickHandler))

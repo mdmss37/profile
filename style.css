@@ -99,6 +99,10 @@ a.btn-submit:hover {
   line-height: 16px;
 }
 
+.card-social {
+  line-height: 16px; 
+}
+
 .card-movie p {
   margin: 0 20px;
 }
@@ -131,8 +135,12 @@ tr.row-movie > td {
   border-radius: 50%;
 }
 
+.icon-github {
+  color: #25292E;
+}
+
 .icon-facebook {
-   color:#3b5998;
+  color: #3b5998;
 }
 
 .icon-twitter {
