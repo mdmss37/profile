@@ -8,6 +8,10 @@ body {
   background-color: #F8F3EF;
 }
 
+.img-circle {
+  border-radius: 50%;
+}
+
 .introduction-body {
   padding: 30px;
 }
