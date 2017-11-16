@@ -1,20 +1,65 @@
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
+
+@import "./node_modules/picnic/picnic.min.css";
+
+nav {
+  background-color: rgba(255, 255, 255, 0.8);
 }
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
+body {
+  background-color: #F8F3EF;
 }
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
+
+.introduction-body {
+  padding: 30px;
+}
+
+.img-project {
+  margin: 20px auto 0 auto;
+  width: 150px;
+  height: 150px;
+}
+
+#page-content {
+  padding-top: 5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 100vh;
+}
+
+.flex-language {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 40px;
+}
+
+.svg-language {
+  width: 70px;
+  height: 70px;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+.social-inline-block {
+  display: inline-block;
 }
 
 .img-circle {
@@ -25,66 +70,6 @@
 
 #profile {
   border: 3px solid lightgrey;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #EEEEEE;
-  color: black;
-}
-
-h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-h2 {
-  font-size: 30px; 
-  font-weight: lighter;
-}
-
-h3 {
-  font-size: 20px;
-  font-weight: lighter;
-}
-
-a {
-  text-decoration: none;
-}
-
-.container {
-  width: 70%-120px;   /* This sets the width */
-  margin: 0 auto; /* This automatically sets left/right margins */
-}
-
-a.btn-submit {
-  color: black;
-  margin-top: 50px;
-  border: 1px solid #111111;
-  border-radius: 40px;
-  font-weight: lighter;
-  padding: 10px 15px;
-  -webkit-transition: all 1s ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>);
-     -moz-transition: all 1s ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>);
-      -ms-transition: all 1s ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>);
-       -o-transition: all 1s ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>);
-          transition: all 1s ease|linear|ease-in|ease-out|ease-in-out|cubic-bezier(<number>,<number>,<number>,<number>);
-}
-
-a.btn-submit:hover {
-  box-shadow: 3px 3px 5px rgba(16, 213, 114, 0.5);
-}
-
-.div-btn {
-  margin-top: 30px;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .card-white {
@@ -120,13 +105,6 @@ tr.row-movie > td {
   padding-left: 0px;
 }
 
-.img-movie {
-  height: 300px;
-  width: 200px;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-}
-
 .fa-stack-1x {
   color:white;
 }
@@ -153,115 +131,4 @@ tr.row-movie > td {
 
 #footer .fa {
   color: #788188;
-}
-
-#sidebar {
-  background-color: #384047;
-  position: fixed;
-  width: 120px;
-  left: 0;
-  top: 0;
-  bottom: 0;
-}
-
-#sidebar {
-  text-align: center;
-}
-
-#sidebar ul li {
-  margin-top: 40px;
-}
-
-#sidebar a {
-  text-decoration: none;
-  font-size: 25px;
-  color: #788188;
-}
-
-#sidebar a i {
-  transition: transform .5s ease-in-out; 
-}
-
-#sidebar a:hover i {
-  color: white;
-  transform: scale(1.4);
-}
-
-#sidebar ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-#page-content {
-  margin-left: 120px;
-}
-
-/* CSS classes you can use on your table td to display the relevant tile */
-td.unopened {
-  background: url('images/unopened.svg');
-  cursor: pointer;
-}
-td.opened {
-  background: url('images/opened.svg');
-}
-td.flagged {
-  background: url('images/flag.svg');
-}
-td.question {
-  background: url('images/question.svg');
-}
-td.mine {
-  /*background: url('images/mine.png');*/
-  background: url('images/dealwithitparrot.gif');
-}
-td.mine-neighbour-1 {
-  background: url('images/1.svg');
-}
-td.mine-neighbour-2 {
-  background: url('images/2.svg');
-}
-td.mine-neighbour-3 {
-  background: url('images/3.svg');
-}
-td.mine-neighbour-4 {
-  background: url('images/4.svg');
-}
-td.mine-neighbour-5 {
-  background: url('images/5.svg');
-}
-td.mine-neighbour-6 {
-  background: url('images/6.svg');
-}
-td.mine-neighbour-7 {
-  background: url('images/7.svg');
-}
-td.mine-neighbour-8 {
-  background: url('images/8.svg');
-}
-
-/* Positioning the Minesweep table and make sure the cells are square */
-table#minesweeper {
-  margin: auto;
-  margin-top: 3em;
-  border: 1px solid #999;
-  border-collapse: collapse;
-}
-table#minesweeper td {
-  width: 16px;
-  height: 16px;
-  background-size: cover;
-}
-
-.center {
-  margin: auto;
-  width: 60%;
-  text-align: center;
-}
-
-.flex-box-difficulty {
-  display: flex;
-  justify-content: center;
-  width: 30%;
-  margin: 0 auto;
-  margin-top: 40px;
 }
