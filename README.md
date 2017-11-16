@@ -7,13 +7,14 @@ Motivation
 -----------
 + Create own profile web page to list projects
 + Learn basic HTML and CSS with responsive design
++ Test fetch API
 
 To Do:
 -----------
 + Add more projects
 + Add resume downloader
-+ ~~random quote generator~~
-+ Add button to update randome quote
++ ~~random quote generator~~ 2017/11/16
++ ~~Add button to update randome quote~~ 2017/11/16
 
 References
 -----------
@@ -30,3 +31,4 @@ References
 + https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
 + https://developer.mozilla.org/ja/docs/Web/API/Element/setAttribute
 + https://stackoverflow.com/questions/43481269/github-pages-404-on-node-modules-folder
++ https://medium.freecodecamp.org/arrow-functions-in-javascript-2f8bf7df5077
