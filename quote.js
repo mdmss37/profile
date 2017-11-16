@@ -56,5 +56,3 @@ quoteButton.addEventListener("click", (e) => {
 });
 
 fetchQuote()
-
-
