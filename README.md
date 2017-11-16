@@ -11,8 +11,9 @@ Motivation
 To Do:
 -----------
 + Add more projects
-+ resume downloader
-+ random quote generator
++ Add resume downloader
++ ~~random quote generator~~
++ Add button to update randome quote
 
 References
 -----------
@@ -27,5 +28,5 @@ References
 + https://stackoverflow.com/questions/9310112/why-am-i-seeing-an-origin-is-not-allowed-by-access-control-allow-origin-error
 + https://stackoverflow.com/questions/43871637/no-access-control-allow-origin-header-is-present-on-the-requested-resource-whe
 + https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
-
++ https://developer.mozilla.org/ja/docs/Web/API/Element/setAttribute
 
