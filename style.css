@@ -12,6 +12,11 @@ body {
   padding: 30px;
 }
 
+.align-center {
+  display: flex;
+  justify-content: center;
+}
+
 .img-project {
   margin: 20px auto 0 auto;
   width: 150px;
@@ -26,10 +31,11 @@ body {
 }
 
 .flex-language {
+  padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 0 40px;
+  flex-wrap: wrap;
 }
 
 .svg-language {
@@ -58,14 +64,12 @@ blockquote p {
   display: inline;
 }
 
-.social-inline-block {
-  display: inline-block;
+#quote-author {
+
 }
 
-.img-circle {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
+.social-inline-block {
+  display: inline-block;
 }
 
 #profile {
@@ -80,8 +84,8 @@ blockquote p {
   border-radius: 3px;
 }
 
-.card-profile {
-  line-height: 16px;
+.card-project p {
+  line-height: 20px;
 }
 
 .card-social {
