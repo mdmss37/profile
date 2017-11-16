@@ -32,3 +32,9 @@ References
 + https://developer.mozilla.org/ja/docs/Web/API/Element/setAttribute
 + https://stackoverflow.com/questions/43481269/github-pages-404-on-node-modules-folder
 + https://medium.freecodecamp.org/arrow-functions-in-javascript-2f8bf7df5077
++ https://stackoverflow.com/questions/29246444/fetch-how-do-you-make-a-non-cached-request
++ https://hacks.mozilla.org/2016/03/referrer-and-cache-control-apis-for-fetch/
++ https://stackoverflow.com/questions/31918035/javascript-only-works-after-opening-developer-tools-in-chrome
+
+
+

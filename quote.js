@@ -7,24 +7,29 @@
 const blockquote = document.querySelector("#quote")
 const quoteButton = document.querySelector("#btn-quote")
 
+let headers = new Headers()
+headers.append('pragma', 'no-cache')
+headers.append('cache-control', 'no-cache')
+
 const fetchQuote = () => {
+  // e.preventDefault()
   blockquote.innerHTML = `<i class="fa fa-spinner fa-spin fa-3x fa-fw spinner-quote"></i>`
   const quoteSpinner = document.querySelector(".spinner-quote")
   blockquote.insertAdjacentHTML("afterbegin", '<div id="quote-author"></div>')
 
   const quoteAuthorDiv = document.querySelector("#quote-author")
-  const proxyUrl = "https://cors-anywhere.herokuapp.com/"
+  const proxyUrl = "https://cors-anywhere.herokuapp.com"
   const quoteUrl = "http://quotesondesign.com/wp-json/posts"
-  const query = "?filter[orderby]=rand&filter[posts_per_page]=1&callback="
-  const fullUrl = `${proxyUrl}${quoteUrl}${query}`
+  const query = "?filter[orderby]=rand&filter[posts_per_page]=1"
+  const fullUrl = `${proxyUrl}/${quoteUrl}${query}`
 
-  fetch(fullUrl)
-  .then(res => console.log("fetch data...") || res.json())
+  fetch(fullUrl, { headers })
+  .then(res => res.json())
   .then(data => {
-    console.log(data)
+    // console.log(data)
     const quoteObj = data[0]
     let quoteAuthor
-    // console.log(quoteObj)
+    console.log(quoteObj)
 
     const quoteBody = quoteObj.content
 
